@@ -1,8 +1,8 @@
 param location string = 'centralus'
-param storageName string = 'ga-storage' 
+param storageName string = 'gastorage' 
 
 resource storageaccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
-  name: '${storageName}-yui8'
+  name: '${storageName}yui8'
   location: location
   kind: 'StorageV2'
   sku: {
